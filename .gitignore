@@ -1,0 +1,18 @@
+# Ignore environment variables file
+.env
+.DS_Store
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Airflow logs
+logs/
+airflow/logs/
+
+# Ignore database files
+*.db
+*.sqlite
+
+# Ignore Docker volumes
+postgres_data/
