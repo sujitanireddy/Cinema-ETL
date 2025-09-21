@@ -2,6 +2,7 @@
 
 ## 📖 Project Overview
 This project is an end-to-end data pipeline and analytics project that tracks **daily worldwide movie releases** using **The Movie Database (TMDB) API**.  
+
 It automates data ingestion, transformation, and visualization to deliver real-time insights into **global film release trends, language distribution, and popularity scores**.
 
 ## 🚀 Tech Stack (All Open Source) 
@@ -35,7 +36,13 @@ It automates data ingestion, transformation, and visualization to deliver real-t
      - Popularity scores and top-performing titles
        
    ![Metabase](Screenshots/Metabase.png)
-   
+
+   ⚠️ **Important Note on Dashboards**  
+   - This project does **not** ship with pre-built Metabase dashboards.  
+   - Once the pipeline runs and data is available in **Postgres**, you will need to:  
+      1. Connect **Metabase** to your local Postgres instance [straightforward one-time setup](https://www.metabase.com/docs/latest/databases/connections/postgresql).  
+      2. Create your own dashboards, questions, and visualizations based on the `movies` and `languages` tables.  
+
 ---
 
 ## 🛠️ Setup & Installation
@@ -73,3 +80,13 @@ You can see Images being downloaded, containers starting in docker.desktop appli
 For logging in, use your credentials set in your .env file.
 
 Run your DAGs using Airflow, Query your Database using pgAdmin and Visualize your data using Metabase.
+
+---
+
+## 🙌 Credits
+- Took inspiration from [Weather Data Pipeline project](https://github.com/chiranjeevi-sagi/weather-data-pipeline)  
+- Uses [TMDB API](https://developer.themoviedb.org/v4/reference/intro/getting-started) for fetching daily movie releases  
+
+## 👤 Author
+**Sujit Anireddy**  
+📧 [anireddysujitreddy@gmail.com](mailto:anireddysujitreddy@gmail.com)  
